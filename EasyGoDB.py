@@ -2,7 +2,9 @@
 
 """
 
---Project info--
+~~Project info~~
+
+GitHub repository - https://github.com/HippyHippo/EasyGoDB
 
 Creator:
 	Marco El-Korashy
@@ -100,11 +102,11 @@ class NoInputToUpdate(NoInputError):
 
 #create key function
 def create(key, value):
-	if key==None:
+	if key is None:
 		raise NoKeyError
 	else:
 		pass
-	if value==None:
+	if value is None:
 		raise NoValueError
 	else:
 		pass
@@ -141,15 +143,15 @@ def create(key, value):
 			
 #update key function
 def update(old_key, new_key, new_value):
-	if old_key==None:
+	if old_key is None:
 		raise NoKeyError
 	else:
 		pass
-	if new_key==None:
+	if new_key is None:
 		raise NoKeyError
 	else:
 		pass
-	if new_value==None:
+	if new_value is None:
 		raise NoValueError
 	else:
 		pass
@@ -196,11 +198,11 @@ def update(old_key, new_key, new_value):
 
 #change key function
 def change_key(old_key, new_key):
-	if old_key==None:
+	if old_key is None:
 		raise NoKeyError
 	else:
 		pass
-	if new_key==None:
+	if new_key is None:
 		raise NoValueError
 	else:
 		pass
@@ -230,11 +232,11 @@ def change_key(old_key, new_key):
 			
 #change value function
 def change_value(key, new_value):
-	if key==None:
+	if key is None:
 		raise NoKeyError
 	else:
 		pass
-	if new_value==None:
+	if new_value is None:
 		raise NoValueError
 	else:
 		pass
